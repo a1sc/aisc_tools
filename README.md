@@ -18,8 +18,14 @@ Small helper tools.
 
 ```python3
 from aisc import url
-
-# Expand shortened url
-url.expand(url)
-
 ```
+
+#### Expand shortened url
+`url.expand(url)`
+
+#### Replace params in url
+```python3
+url.replace('http://example.com?foo=bar', {'foo': 'spam'})
+>>> http://example.com?foo=spam
+```
+
