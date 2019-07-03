@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "AISC Tools"
+name = "aisc"
 version = "0.1.5"
 description = "AISC Helper Tools"
 authors = ["MB <mb@aisc.io>"]
