@@ -7,6 +7,8 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/a1sc/aisc_tools.svg)
 [![PyPI](https://img.shields.io/pypi/v/aisc.svg)](https://pypi.org/project/aisc/)
 
+Small helper tools.
+
 ## Installation
 
 `pip install aisc`
