@@ -1,0 +1,7 @@
+README.rst
+setup.py
+aisc/__init__.py
+aisc.egg-info/PKG-INFO
+aisc.egg-info/SOURCES.txt
+aisc.egg-info/dependency_links.txt
+aisc.egg-info/top_level.txt
