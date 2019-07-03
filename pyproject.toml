@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "aisc"
-version = "0.1.3"
+name = "AISC Tools"
+version = "0.1.5"
 description = "AISC Helper Tools"
-authors = ["MB <mb@m1k.pw>"]
+authors = ["MB <mb@aisc.io>"]
 license="MIT"
 readme="README.md"
 homepage="https://github.com/a1sc/aisc_tools"
