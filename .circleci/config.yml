@@ -13,7 +13,7 @@ commands:
       - restore_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
       - run: curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-      - run: poetry update --dev
+      - run: poetry install --dev
       - save_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
