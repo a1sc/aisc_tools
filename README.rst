@@ -1,6 +1,8 @@
 # AISC Tools
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/a1sc/aisc_tools.svg)
+[![PyPI](https://img.shields.io/pypi/v/aisc.svg)](https://pypi.org/project/aisc/)
 
 ## Installation
 
