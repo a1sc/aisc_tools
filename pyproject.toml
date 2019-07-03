@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aisc"
-version = "0.1.6"
+version = "0.1.7"
 description = "AISC Helper Tools"
 authors = ["MB <mb@aisc.io>"]
 license="MIT"
