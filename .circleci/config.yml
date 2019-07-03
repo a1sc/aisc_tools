@@ -10,6 +10,7 @@ commands:
     steps:
       - run: sudo chown -R circleci:circleci /usr/local/bin
       - run: sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
+      - run: sudo chown -R circleci:circleci /home/circleci/.cache/pypoetry/virtualenvs
       - restore_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
       - run: curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
@@ -21,6 +22,7 @@ commands:
             - ".venv"
             - "/usr/local/bin"
             - "/usr/local/lib/python3.7/site-package"
+            - "/home/circleci/.cache/pypoetry/virtualenvs"
 jobs:
   run_all_tests:
     working_directory: ~/UFY_DB
