@@ -1,6 +1,6 @@
 ![AISC](http://aisc.io/wp-content/uploads/2018/09/logo.svg)
 
-# AISC Tools
+## AISC Tools
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aisc.svg)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
