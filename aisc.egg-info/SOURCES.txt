@@ -1,4 +1,4 @@
-README.rst
+README.md
 setup.py
 aisc/__init__.py
 aisc.egg-info/PKG-INFO
