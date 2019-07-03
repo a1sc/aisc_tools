@@ -1,0 +1,37 @@
+version: 2.1
+executors:
+  main_executor:
+    docker:
+      - image: circleci/python:3.7.3-stretch
+
+commands:
+  install_everything:
+    description: Install all dependencies
+    steps:
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
+      - restore_cache:
+          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+      - run: curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+      - checkout
+      - run: poetry install
+      - save_cache:
+          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          paths:
+            - ".venv"
+            - "/usr/local/bin"
+            - "/usr/local/lib/python3.7/site-package"
+jobs:
+  run_all_tests:
+    working_directory: ~/UFY_DB
+    executor: main_executor
+    steps:
+      - install_everything
+      - run: poetry run pytest -x --capture=sys
+
+workflows:
+  version: 2.1
+  test_all:
+    jobs:
+      - run_all_tests
+
