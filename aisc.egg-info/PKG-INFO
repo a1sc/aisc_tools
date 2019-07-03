@@ -1,11 +1,11 @@
 Metadata-Version: 1.2
-Name: aisc
+Name: AISC Tools
 Version: 0.1.0
 Summary: UNKNOWN
-Home-page: UNKNOWN
+Home-page: https://github.com/a1sc/aisc_tools
 Author: MB
 Author-email: mb@m1k.pw
-License: UNKNOWN
+License: MIT
 Description: UNKNOWN
 Platform: UNKNOWN
 Requires-Python: >=3.7,<4.0
