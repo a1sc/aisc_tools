@@ -1,7 +1,7 @@
 import requests
 
 
-def url_expand(url: str) -> str:
+def expand(url: str) -> str:
     """
     Expands shortened urls, otherwise returns same url. Raises requests exceptions if any.
 
