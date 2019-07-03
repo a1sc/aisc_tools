@@ -17,7 +17,7 @@ commands:
       - checkout
       - run: poetry install
       - save_cache:
-          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          key: deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}
           paths:
             - ".venv"
             - "/usr/local/bin"
