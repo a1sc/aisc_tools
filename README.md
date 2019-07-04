@@ -26,6 +26,6 @@ from aisc import url
 #### Replace params in url
 ```python3
 url.replace('http://example.com?foo=bar', {'foo': 'spam'})
->>> http://example.com?foo=spam
+>>> 'http://example.com?foo=spam'
 ```
 
